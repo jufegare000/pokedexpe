@@ -13,6 +13,6 @@ import BlackLineProps from "./BlackLine.props";
   }: BlackLineProps) => {
     const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
     return (
-        <div className="line-1"></div>
+        <div className="line-1">Holi</div>
     );
   };
