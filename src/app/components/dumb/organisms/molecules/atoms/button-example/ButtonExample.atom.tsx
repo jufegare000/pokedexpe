@@ -1,0 +1,21 @@
+import { ButtonExampleProps } from "./props/ButtonExample.props";
+
+export const ButtonExample = ({
+    primary = false,
+    size = 'medium',
+    backgroundColor,
+    label,
+    ...props
+  }: ButtonExampleProps) => {
+    const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+    return (
+      <button
+        type="button"
+        className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+        style={{ backgroundColor }}
+        {...props}
+      >
+        {label}
+      </button>
+    );
+  };
